@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BrainShells.iml" filepath="$PROJECT_DIR$/BrainShells.iml" />
+      <module fileurl="file://$PROJECT_DIR$/key-pixel-solution/key-pixel-solution.iml" filepath="$PROJECT_DIR$/key-pixel-solution/key-pixel-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rendered-image-solution/rendered-image-solution.iml" filepath="$PROJECT_DIR$/rendered-image-solution/rendered-image-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-image-solution/sample-image-solution.iml" filepath="$PROJECT_DIR$/sample-image-solution/sample-image-solution.iml" />
     </modules>
   </component>
 </project>

@@ -1,8 +1,9 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="RenderedImageCardRecognizer" type="Application" factoryName="Application" nameIsGenerated="true">
     <option name="MAIN_CLASS_NAME" value="com.example.gdomo.RenderedImageCardRecognizer" />
-    <module name="BrainShells" />
+    <module name="rendered-image-solution" />
     <option name="PROGRAM_PARAMETERS" value="$USER_HOME$/Downloads/java_test_task/imgs_marked" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rendered-image-solution" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.example.gdomo.*" />

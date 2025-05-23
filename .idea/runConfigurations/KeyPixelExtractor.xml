@@ -1,8 +1,9 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="KeyPixelExtractor" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
     <option name="MAIN_CLASS_NAME" value="com.example.gdomo.KeyPixelExtractor" />
-    <module name="BrainShells" />
+    <module name="key-pixel-solution" />
     <option name="PROGRAM_PARAMETERS" value="$USER_HOME$/Downloads/java_test_task/imgs_marked" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/key-pixel-solution" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.example.gdomo.*" />
