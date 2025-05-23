@@ -2,7 +2,7 @@
   <configuration default="false" name="SampleImageExtractor" type="Application" factoryName="Application" nameIsGenerated="true">
     <option name="MAIN_CLASS_NAME" value="com.example.gdomo.SampleImageExtractor" />
     <module name="sample-image-solution" />
-    <option name="PROGRAM_PARAMETERS" value="$USER_HOME$/Downloads/java_test_task/imgs_marked" />
+    <option name="PROGRAM_PARAMETERS" value="../java_test_task/imgs_marked" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sample-image-solution" />
     <extension name="coverage">
       <pattern>
