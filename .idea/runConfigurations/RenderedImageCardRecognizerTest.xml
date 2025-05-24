@@ -3,6 +3,7 @@
     <option name="MAIN_CLASS_NAME" value="com.example.gdomo.RenderedImageCardRecognizerTest" />
     <module name="rendered-image-solution" />
     <option name="PROGRAM_PARAMETERS" value="../java_test_task/imgs_marked" />
+    <option name="VM_PARAMETERS" value="-Djava.awt.headless=true" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rendered-image-solution" />
     <extension name="coverage">
       <pattern>
