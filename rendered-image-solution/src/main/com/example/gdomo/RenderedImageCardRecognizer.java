@@ -13,6 +13,7 @@ import java.util.*;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class RenderedImageCardRecognizer {
@@ -30,7 +31,7 @@ public class RenderedImageCardRecognizer {
 
     public static void recognizeCards(String folder, BiConsumer<File, String> onRecognized) throws IOException {
         final Map<String, BufferedImage> valuesToSample = Stream.concat(
-                        Stream.iterate(2, i -> i + 1).limit(9).map(String::valueOf),
+                        IntStream.rangeClosed(2, 10).mapToObj(String::valueOf),
                         Stream.of("A", "J", "Q", "K")
                 )
                 .collect(Collectors.toMap(Function.identity(), s -> renderNormalized(s, VALUE_AREA.width, VALUE_AREA.height)));
