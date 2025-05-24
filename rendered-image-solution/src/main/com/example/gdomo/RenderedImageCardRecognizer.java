@@ -69,7 +69,8 @@ public class RenderedImageCardRecognizer {
         graphics.setColor(Color.WHITE);
         graphics.fillRect(0, 0, width, height);
 
-        Font font = new Font("Tahoma", Font.PLAIN, (int) (height * 1.3)); // points to pixels
+        final String fontName = System.getProperty("os.name").toUpperCase().contains("WIN") ? "MS PGothic" : "Tahoma";
+        Font font = new Font(fontName, Font.PLAIN, (int) (height * 1.3)); // points to pixels
         font = font.deriveFont(Map.of(TextAttribute.TRACKING, -0.15));
 
         final AttributedString attributedText = new AttributedString(text);
