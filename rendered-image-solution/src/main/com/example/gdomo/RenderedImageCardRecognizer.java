@@ -35,14 +35,9 @@ public class RenderedImageCardRecognizer {
                 )
                 .collect(Collectors.toMap(Function.identity(), s -> renderNormalized(s, VALUE_AREA.width, VALUE_AREA.height)));
 
-        final Map<String, BufferedImage> suitsToSample = Stream.of("♣", "♠", "♦", "♥")
-                .collect(Collectors.toMap(suit -> switch (suit) {
-                    case "♣" -> "c";
-                    case "♠" -> "s";
-                    case "♦" -> "d";
-                    case "♥" -> "h";
-                    default -> throw new IllegalStateException("Unexpected value: " + suit);
-                }, s -> renderNormalized(s, SUIT_AREA.width, SUIT_AREA.height)));
+        final Map<String, BufferedImage> suitsToSample = Map.of("c", "♣", "s", "♠", "d", "♦", "h", "♥")
+                .entrySet().stream()
+                .collect(Collectors.toMap(Map.Entry::getKey, e -> renderNormalized(e.getValue(), SUIT_AREA.width, SUIT_AREA.height)));
 
         final File[] files = Optional.ofNullable(new File(folder).listFiles()).orElse(new File[0]);
         for (File file : files) {
